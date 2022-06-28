@@ -5,8 +5,6 @@
 #ifndef DSA_CPP_ARRAY_H
 #define DSA_CPP_ARRAY_H
 
-#include <iostream>
-
 template<class T>
 class Array {
 public:
@@ -22,19 +20,19 @@ public:
     void removeItem(const T& item);
     void removeAt(int index);
     void removeEnd();
-    int get() const;
-    int getAt(int index) const;
+    T get() const;
+    T getAt(int index) const;
     int indexOf(const T& item) const;
     void replaceAt(int index, const T& item);
-    void replace(T& c_item, const T& r_item);
+    void replace(T& c_item, T& r_item);
     void clear();
     void print() const;
     // Overload Assignment Operator
     const Array<T> &operator=(const Array<T>& rhs);
     // Overload at-position operator
-    const T &operator[](int index);
+    T &operator[](int index);
     // Search - Sequence
-    int seqSearch(const T& item) const;
+    T seqSearch(const T& item) const;
     // Constructors
     Array(int size = 100);
     Array(const Array<T>& rhs);
