@@ -3,6 +3,7 @@
 //
 
 #include "Array.h"
+#include <iostream>
 
 template<class T>
 bool Array<T>::isEmpty() const {
@@ -104,7 +105,7 @@ void Array<T>::removeEnd() {
 }
 
 template<class T>
-int Array<T>::get() const {
+T Array<T>::get() const {
     if (length == 0)
         std::cerr << "List is empty right now!" << std::endl;
     else
@@ -112,7 +113,7 @@ int Array<T>::get() const {
 }
 
 template<class T>
-int Array<T>::getAt(int index) const {
+T Array<T>::getAt(int index) const {
     if (index < 0 || index >= length)
         std::cerr << "The location of the item to be retrieved is out of range." << std::endl;
     else
@@ -140,7 +141,7 @@ void Array<T>::replaceAt(int index, const T &item) {
 }
 
 template<class T>
-void Array<T>::replace(T &c_item, const T &r_item) {
+void Array<T>::replace(T &c_item, T &r_item) {
     int index;
     if (length == 0)
         std::cerr << "List is empty right now!" << std::endl;
@@ -184,12 +185,12 @@ const Array<T> &Array<T>::operator=(const Array<T> &rhs) {
 }
 
 template<class T>
-const T &Array<T>::operator[](int index) {
+T &Array<T>::operator[](int index) {
     return list[index];
 }
 
 template<class T>
-int Array<T>::seqSearch(const T &item) const {
+T Array<T>::seqSearch(const T &item) const {
     int index;
     bool found = false;
     for (index = 0; index < length; index++)
@@ -197,6 +198,10 @@ int Array<T>::seqSearch(const T &item) const {
             found = true;
             break;
         }
+    if (found)
+        return index;
+    else
+        return NULL;
 }
 
 template<class T>
