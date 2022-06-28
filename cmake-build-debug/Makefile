@@ -129,6 +129,30 @@ DSA_CPP/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSA_CPP.dir/build.make CMakeFiles/DSA_CPP.dir/build
 .PHONY : DSA_CPP/fast
 
+linear/Array.o: linear/Array.cpp.o
+.PHONY : linear/Array.o
+
+# target to build an object file
+linear/Array.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSA_CPP.dir/build.make CMakeFiles/DSA_CPP.dir/linear/Array.cpp.o
+.PHONY : linear/Array.cpp.o
+
+linear/Array.i: linear/Array.cpp.i
+.PHONY : linear/Array.i
+
+# target to preprocess a source file
+linear/Array.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSA_CPP.dir/build.make CMakeFiles/DSA_CPP.dir/linear/Array.cpp.i
+.PHONY : linear/Array.cpp.i
+
+linear/Array.s: linear/Array.cpp.s
+.PHONY : linear/Array.s
+
+# target to generate assembly for a file
+linear/Array.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSA_CPP.dir/build.make CMakeFiles/DSA_CPP.dir/linear/Array.cpp.s
+.PHONY : linear/Array.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DSA_CPP"
+	@echo "... linear/Array.o"
+	@echo "... linear/Array.i"
+	@echo "... linear/Array.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

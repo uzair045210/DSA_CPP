@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/media/uzair/sal/Work/DSA_CPP/linear/Array.cpp">
+			<Option target="DSA_CPP"/>
+		</Unit>
+		<Unit filename="/media/uzair/sal/Work/DSA_CPP/linear/Array.h">
+			<Option target="DSA_CPP"/>
+		</Unit>
 		<Unit filename="/media/uzair/sal/Work/DSA_CPP/main.cpp">
 			<Option target="DSA_CPP"/>
 		</Unit>

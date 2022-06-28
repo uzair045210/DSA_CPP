@@ -3,4 +3,4 @@ project(DSA_CPP)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(DSA_CPP main.cpp)
+add_executable(DSA_CPP main.cpp linear/Array.cpp linear/Array.h)
